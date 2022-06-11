@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="197.10144927536234" y="65.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserDefaultsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="BYZ-38-t0r" customClass="SettingsViewController" customModule="UserDefaultsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,12 +80,21 @@
                                 <buttonConfiguration key="configuration" style="plain" title="SAVE IT !">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveSettings" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXl-IQ-oU7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96841138601303101" green="0.85465357459562419" blue="0.60395886924073872" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Yj-jH-vDg"/>
+                    <connections>
+                        <outlet property="colorChoiceLabel" destination="XXe-mH-B02" id="Qj4-0v-jv3"/>
+                        <outlet property="colorSegment" destination="onG-xD-BJX" id="gc8-Wr-yPk"/>
+                        <outlet property="nameTextField" destination="pTL-JC-Kjy" id="mE5-ms-aC5"/>
+                        <outlet property="saveButton" destination="4ev-2g-83s" id="0J0-uy-k38"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
