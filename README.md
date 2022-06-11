@@ -5,7 +5,7 @@ User Defaults is an offline data storage mechanism in iOS Apps. It is used to st
 
 It Provides key value pair storage iin parmanent storage area of your app on device.
 
-Adidng a demo of the app : 
+Adding a demo of the app : 
 
 https://user-images.githubusercontent.com/80701312/173200589-fc16ab1d-ffc0-4345-bb4e-4554a6bafa28.mp4
 
